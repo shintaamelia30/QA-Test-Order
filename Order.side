@@ -1,0 +1,731 @@
+{
+  "id": "2fbce671-cb58-4c34-b540-a48190453de0",
+  "version": "2.0",
+  "name": "Order",
+  "url": "http://dev-rs.sidoni.xyz",
+  "tests": [{
+    "id": "ed5ef76d-b3d9-4c18-9699-3541adc3386b",
+    "name": "test",
+    "commands": [{
+      "id": "9ef82771-a1b2-473b-a695-2cebee26d53a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7d6043e-a3a7-4e5d-8787-1bde635b2738",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1346x718",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7c32c32-d004-41e4-90dc-17d501df2fe4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#primary-menu .appao-btn",
+      "targets": [
+        ["css=#primary-menu .appao-btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'SIDONI RS (Rumah Sakit)')])[2]", "xpath:link"],
+        ["xpath=//ul[@id='primary-menu']/li[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://dev-rs.sidoni.xyz/rumah-sakit/auth/signin'])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4474a228-6923-40c7-b6b8-8c885d30b777",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='email']",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.inputemail", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3372d638-974b-44ec-972b-b4e89c89859f",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.inputemail", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "rs.test@mail.com"
+    }, {
+      "id": "178d9660-57ec-4e37-ac34-86add91ba234",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.inputpassword", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d8f5494-5001-4b07-b764-2cd7a184ab96",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.inputpassword", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "252828ae-883d-44b5-a18f-e007d7a1962d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login100-form-btn",
+      "targets": [
+        ["css=.login100-form-btn", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5db3f51f-1f2c-437f-b77f-ad44d1a51661",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Transfusi",
+      "targets": [
+        ["linkText=Transfusi", "linkText"],
+        ["css=.nav-item:nth-child(8) > .nav-link", "css:finder"],
+        ["xpath=//ul[@id='accordionSidebar']/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Transfusi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a4a19bf-44fb-4b90-baea-e03d939401ba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Order Baru",
+      "targets": [
+        ["linkText=Order Baru", "linkText"],
+        ["css=#collapseTwo .collapse-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Order Baru')]", "xpath:link"],
+        ["xpath=//div[@id='collapseTwo']/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://dev-rs.sidoni.xyz/rumah-sakit/transfusi/order-baru-transfusi']", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Order Baru')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "767e9556-d647-4e5b-8700-056baf54b3e8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tambah permintaan",
+      "targets": [
+        ["linkText=Tambah permintaan", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//a[contains(text(),'Tambah permintaan')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://dev-rs.sidoni.xyz/rumah-sakit/transfusi/order-baru-transfusi/create']", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tambah permintaan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7fdfef0-cbd2-4bec-9002-cf9e0c2d5898",
+      "comment": "",
+      "command": "click",
+      "target": "id=tgl-permintaan",
+      "targets": [
+        ["id=tgl-permintaan", "id"],
+        ["name=tanggal_permintaan", "name"],
+        ["css=#tgl-permintaan", "css:finder"],
+        ["xpath=//input[@id='tgl-permintaan']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div/div[3]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f0221a2-b119-4282-9a3e-2b22f50d47ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.datetimepicker:nth-child(16) > .datetimepicker-days tfoot .today",
+      "targets": [
+        ["css=.datetimepicker:nth-child(16) > .datetimepicker-days tfoot .today", "css:finder"],
+        ["xpath=//body[@id='page-top']/div[3]/div[3]/table/tfoot/tr/th", "xpath:idRelative"],
+        ["xpath=//div[3]/table/tfoot/tr/th", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0103f158-e8da-490e-86a6-c856dc6c3f86",
+      "comment": "",
+      "command": "click",
+      "target": "id=tgl-diperlukan",
+      "targets": [
+        ["id=tgl-diperlukan", "id"],
+        ["name=tanggal_diperlukan", "name"],
+        ["css=#tgl-diperlukan", "css:finder"],
+        ["xpath=//input[@id='tgl-diperlukan']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div/div[4]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36bbe4f3-3829-46f6-8ef8-d5b2892d0264",
+      "comment": "",
+      "command": "click",
+      "target": "id=content",
+      "targets": [
+        ["id=content", "id"],
+        ["css=#content", "css:finder"],
+        ["xpath=//div[@id='content']", "xpath:attributes"],
+        ["xpath=//div[@id='content-wrapper']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e55ae327-0f27-4d2c-9b38-8b3fc3faa6ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=tgl-diperlukan",
+      "targets": [
+        ["id=tgl-diperlukan", "id"],
+        ["name=tanggal_diperlukan", "name"],
+        ["css=#tgl-diperlukan", "css:finder"],
+        ["xpath=//input[@id='tgl-diperlukan']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div/div[4]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48248f36-f059-4742-84fc-ed1846031dc9",
+      "comment": "",
+      "command": "click",
+      "target": "name=bagian_rumah_sakit_id",
+      "targets": [
+        ["name=bagian_rumah_sakit_id", "name"],
+        ["css=.col-sm-6:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//select[@name='bagian_rumah_sakit_id']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5dca54dd-fbf9-4e12-9f39-8df5b7f58458",
+      "comment": "",
+      "command": "select",
+      "target": "name=bagian_rumah_sakit_id",
+      "targets": [],
+      "value": "label=Administrasi"
+    }, {
+      "id": "113c4b9c-d9ba-40fd-a08e-40a770e7ec28",
+      "comment": "",
+      "command": "click",
+      "target": "name=bagian_rumah_sakit_id",
+      "targets": [
+        ["name=bagian_rumah_sakit_id", "name"],
+        ["css=.col-sm-6:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//select[@name='bagian_rumah_sakit_id']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdfcffe0-a2ac-4f1c-a5e0-049baf10904b",
+      "comment": "",
+      "command": "click",
+      "target": "name=udd_id",
+      "targets": [
+        ["name=udd_id", "name"],
+        ["css=.select-udd", "css:finder"],
+        ["xpath=//select[@name='udd_id']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "167fb092-b76a-4962-836e-48e6f7f914a8",
+      "comment": "",
+      "command": "click",
+      "target": "id=tgl-diperlukan",
+      "targets": [
+        ["id=tgl-diperlukan", "id"],
+        ["name=tanggal_diperlukan", "name"],
+        ["css=#tgl-diperlukan", "css:finder"],
+        ["xpath=//input[@id='tgl-diperlukan']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div/div[4]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69e18070-c79f-4d11-b9c9-64397611fdaa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.datetimepicker:nth-child(17) tbody .today",
+      "targets": [
+        ["css=.datetimepicker:nth-child(17) tbody .today", "css:finder"],
+        ["xpath=//body[@id='page-top']/div[4]/div[3]/table/tbody/tr[2]/td[6]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[3]/table/tbody/tr[2]/td[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa3cba66-6f28-4dda-82b4-485c67aac2cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.datetimepicker:nth-child(17) .hour:nth-child(8)",
+      "targets": [
+        ["css=.datetimepicker:nth-child(17) .hour:nth-child(8)", "css:finder"],
+        ["xpath=//body[@id='page-top']/div[4]/div[2]/table/tbody/tr/td/span[8]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/table/tbody/tr/td/span[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fc12768-0950-420e-9052-cd0569b68ea7",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.datetimepicker:nth-child(17) .hour:nth-child(8)",
+      "targets": [
+        ["css=.datetimepicker:nth-child(17) .hour:nth-child(8)", "css:finder"],
+        ["xpath=//body[@id='page-top']/div[4]/div[2]/table/tbody/tr/td/span[8]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/table/tbody/tr/td/span[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01f137a9-ef7e-4734-860b-f91c88df9e25",
+      "comment": "",
+      "command": "click",
+      "target": "css=.datetimepicker:nth-child(17) > .datetimepicker-hours .active",
+      "targets": [
+        ["css=.datetimepicker:nth-child(17) > .datetimepicker-hours .active", "css:finder"],
+        ["xpath=//body[@id='page-top']/div[4]/div[2]/table/tbody/tr/td/span[15]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/table/tbody/tr/td/span[15]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d165428e-d571-4303-a34d-58b38cb65459",
+      "comment": "",
+      "command": "click",
+      "target": "css=.datetimepicker:nth-child(17) > .datetimepicker-minutes .today",
+      "targets": [
+        ["css=.datetimepicker:nth-child(17) > .datetimepicker-minutes .today", "css:finder"],
+        ["xpath=//body[@id='page-top']/div[4]/div/table/tfoot/tr/th", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tfoot/tr/th", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23ac4b98-50be-4ccd-bc60-10c285d2107d",
+      "comment": "",
+      "command": "click",
+      "target": "name=udd_id",
+      "targets": [
+        ["name=udd_id", "name"],
+        ["css=.select-udd", "css:finder"],
+        ["xpath=//select[@name='udd_id']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5f97a32-88f7-44cf-98bc-f30abd62baa8",
+      "comment": "",
+      "command": "select",
+      "target": "name=udd_id",
+      "targets": [],
+      "value": "label=UDD PMI KAB. TANGERANG"
+    }, {
+      "id": "f32d39d8-96ed-46e5-ac95-d025b757587e",
+      "comment": "",
+      "command": "click",
+      "target": "name=udd_id",
+      "targets": [
+        ["name=udd_id", "name"],
+        ["css=.select-udd", "css:finder"],
+        ["xpath=//select[@name='udd_id']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c21b62c-bcd3-4a0b-a18f-2f936734aaca",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-ilep-container",
+      "targets": [
+        ["id=select2-ilep-container", "id"],
+        ["css=#select2-ilep-container", "css:finder"],
+        ["xpath=//span[@id='select2-ilep-container']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div/div/div/div/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77836be9-df28-497f-985d-a2a53933322d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1) .mr-3",
+      "targets": [
+        ["css=.form-group:nth-child(1) .mr-3", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div/div[2]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Ya')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3776573c-7e40-4206-95cc-445ca6ebf208",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1) .radio-inline:nth-child(2)",
+      "targets": [
+        ["css=.form-group:nth-child(1) .radio-inline:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div/div[2]/div/div/label[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label[2]", "xpath:position"],
+        ["xpath=//label[contains(.,'Tidak')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e2ebbf1-b54c-4824-86a6-f90173540c27",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-6 > .form-group > .radio-inline:nth-child(2)",
+      "targets": [
+        ["css=.col-sm-6 > .form-group > .radio-inline:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div/div[2]/div[3]/label[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ab2a5df-dcb6-46b9-a765-eee49b62eb80",
+      "comment": "",
+      "command": "click",
+      "target": "name=diagnosa_klinis_id",
+      "targets": [
+        ["name=diagnosa_klinis_id", "name"],
+        ["css=.form-group:nth-child(9) .form-control", "css:finder"],
+        ["xpath=//select[@name='diagnosa_klinis_id']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div/div/div[9]/div/select", "xpath:idRelative"],
+        ["xpath=//div[9]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18ba06de-7a4d-49f9-9582-2c258a238c51",
+      "comment": "",
+      "command": "select",
+      "target": "name=diagnosa_klinis_id",
+      "targets": [],
+      "value": "label=Anemia"
+    }, {
+      "id": "b209fe23-0baf-41d1-b084-c84d328b7e47",
+      "comment": "",
+      "command": "click",
+      "target": "name=diagnosa_klinis_id",
+      "targets": [
+        ["name=diagnosa_klinis_id", "name"],
+        ["css=.form-group:nth-child(9) .form-control", "css:finder"],
+        ["xpath=//select[@name='diagnosa_klinis_id']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div/div/div[9]/div/select", "xpath:idRelative"],
+        ["xpath=//div[9]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05909700-27dd-498a-96de-86d4508a1f7e",
+      "comment": "",
+      "command": "click",
+      "target": "name=jenis_permintaan_id",
+      "targets": [
+        ["name=jenis_permintaan_id", "name"],
+        ["css=.form-group:nth-child(10) .form-control", "css:finder"],
+        ["xpath=//select[@name='jenis_permintaan_id']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div/div/div[10]/div/select", "xpath:idRelative"],
+        ["xpath=//div[10]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cbda20c-2369-4f21-a24e-fad44baba1f0",
+      "comment": "",
+      "command": "select",
+      "target": "name=jenis_permintaan_id",
+      "targets": [],
+      "value": "label=Biasa"
+    }, {
+      "id": "1622549c-2dbd-4f3a-adb2-d56ecbcb2102",
+      "comment": "",
+      "command": "click",
+      "target": "name=jenis_permintaan_id",
+      "targets": [
+        ["name=jenis_permintaan_id", "name"],
+        ["css=.form-group:nth-child(10) .form-control", "css:finder"],
+        ["xpath=//select[@name='jenis_permintaan_id']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div/div/div[10]/div/select", "xpath:idRelative"],
+        ["xpath=//div[10]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bb310e3-c5dd-49d0-8c10-6f75c61cae48",
+      "comment": "",
+      "command": "click",
+      "target": "id=reason",
+      "targets": [
+        ["id=reason", "id"],
+        ["name=alasan_transfusi", "name"],
+        ["css=#reason", "css:finder"],
+        ["xpath=//input[@id='reason']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div/div/div[11]/div/input", "xpath:idRelative"],
+        ["xpath=//div[11]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57f0f2c0-4f8b-46f7-97f2-4a8145831f40",
+      "comment": "",
+      "command": "type",
+      "target": "id=reason",
+      "targets": [
+        ["id=reason", "id"],
+        ["name=alasan_transfusi", "name"],
+        ["css=#reason", "css:finder"],
+        ["xpath=//input[@id='reason']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div/div/div[11]/div/input", "xpath:idRelative"],
+        ["xpath=//div[11]/div/input", "xpath:position"]
+      ],
+      "value": "sds"
+    }, {
+      "id": "f63a7d5b-c383-40d7-a1fa-321cce85e19f",
+      "comment": "",
+      "command": "click",
+      "target": "id=hemoglobin",
+      "targets": [
+        ["id=hemoglobin", "id"],
+        ["name=hemoglobin", "name"],
+        ["css=#hemoglobin", "css:finder"],
+        ["xpath=//input[@id='hemoglobin']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div/div/div[12]/div/input", "xpath:idRelative"],
+        ["xpath=//div[12]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7605b243-3338-4694-af00-705ab86607a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=hemoglobin",
+      "targets": [
+        ["id=hemoglobin", "id"],
+        ["name=hemoglobin", "name"],
+        ["css=#hemoglobin", "css:finder"],
+        ["xpath=//input[@id='hemoglobin']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div/div/div[12]/div/input", "xpath:idRelative"],
+        ["xpath=//div[12]/div/input", "xpath:position"]
+      ],
+      "value": "14"
+    }, {
+      "id": "e533767b-300f-4402-8885-7364a2efea34",
+      "comment": "",
+      "command": "click",
+      "target": "id=nama_dokter",
+      "targets": [
+        ["id=nama_dokter", "id"],
+        ["name=nama_dokter", "name"],
+        ["css=#nama_dokter", "css:finder"],
+        ["xpath=//input[@id='nama_dokter']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d16222b9-dd8f-4f45-ab81-f26a907127ad",
+      "comment": "",
+      "command": "type",
+      "target": "id=nama_dokter",
+      "targets": [
+        ["id=nama_dokter", "id"],
+        ["name=nama_dokter", "name"],
+        ["css=#nama_dokter", "css:finder"],
+        ["xpath=//input[@id='nama_dokter']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "xgd"
+    }, {
+      "id": "aaa35680-589a-4b07-a080-754b186d0d45",
+      "comment": "",
+      "command": "click",
+      "target": "id=petugas",
+      "targets": [
+        ["id=petugas", "id"],
+        ["name=nama_pengambil_sampel_darah_pasien", "name"],
+        ["css=#petugas", "css:finder"],
+        ["xpath=//input[@id='petugas']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div[3]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95d7a01d-11ad-4c99-a773-eeef26711885",
+      "comment": "",
+      "command": "type",
+      "target": "id=petugas",
+      "targets": [
+        ["id=petugas", "id"],
+        ["name=nama_pengambil_sampel_darah_pasien", "name"],
+        ["css=#petugas", "css:finder"],
+        ["xpath=//input[@id='petugas']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div[3]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "dg"
+    }, {
+      "id": "87ac4509-ecd2-4f07-a080-2b1e381de44c",
+      "comment": "",
+      "command": "click",
+      "target": "id=tanggal_pengambilan_sampel_darah",
+      "targets": [
+        ["id=tanggal_pengambilan_sampel_darah", "id"],
+        ["name=tanggal_pengambilan_sampel_darah", "name"],
+        ["css=#tanggal_pengambilan_sampel_darah", "css:finder"],
+        ["xpath=//input[@id='tanggal_pengambilan_sampel_darah']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div[3]/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9aec4616-5d79-4724-902a-712bb2d2fd14",
+      "comment": "",
+      "command": "click",
+      "target": "css=.datetimepicker:nth-child(21) > .datetimepicker-days tfoot .today",
+      "targets": [
+        ["css=.datetimepicker:nth-child(21) > .datetimepicker-days tfoot .today", "css:finder"],
+        ["xpath=//body[@id='page-top']/div[5]/div[3]/table/tfoot/tr/th", "xpath:idRelative"],
+        ["xpath=//div[5]/div[3]/table/tfoot/tr/th", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94ec383f-7e8f-48ed-ac0f-7044fe9ee5cd",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.sticky-footer",
+      "targets": [
+        ["css=.sticky-footer", "css:finder"],
+        ["xpath=//div[@id='content']/footer", "xpath:idRelative"],
+        ["xpath=//footer", "xpath:position"],
+        ["xpath=//footer[contains(.,'Copyright © Sidoni RS 2020')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70c3ff47-b14a-46f2-9983-6e9d8ce149b5",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=content",
+      "targets": [
+        ["id=content", "id"],
+        ["css=#content", "css:finder"],
+        ["xpath=//div[@id='content']", "xpath:attributes"],
+        ["xpath=//div[@id='content-wrapper']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1b1c9a7-4f8b-4918-89e2-eba2d894bb3b",
+      "comment": "",
+      "command": "click",
+      "target": "id=content",
+      "targets": [
+        ["id=content", "id"],
+        ["css=#content", "css:finder"],
+        ["xpath=//div[@id='content']", "xpath:attributes"],
+        ["xpath=//div[@id='content-wrapper']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e63db01f-c9cb-41be-8eea-1bf8efa07418",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-send",
+      "targets": [
+        ["css=.btn-send", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/form/div[3]/div[3]/div/div[4]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Kirim')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1486199-4a8e-40ad-9001-79e0e2b46800",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//body[@id='page-top']/div[6]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Yes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21cb553d-4b72-45d2-ac45-8f0dfa916a9f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//body[@id='page-top']/div[6]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Yes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e4fd755-7f4a-43d6-b209-193e99f3c16b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-lg-inline",
+      "targets": [
+        ["css=.d-lg-inline", "css:finder"],
+        ["xpath=//a[@id='userDropdown']/span", "xpath:idRelative"],
+        ["xpath=//nav/ul/li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'RS Test')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1499872-0e00-4697-9c22-c2fd3d716063",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/nav/ul/li[4]/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[16]", "xpath:href"],
+        ["xpath=//li[4]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,' Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a23cf102-e7cf-45fb-8e73-a523f4d06cfe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='logoutModal']/div/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://dev-rs.sidoni.xyz/logout']", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "81e7778e-d411-4c81-b461-074c7428ea3b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ed5ef76d-b3d9-4c18-9699-3541adc3386b"]
+  }],
+  "urls": ["http://dev-rs.sidoni.xyz/"],
+  "plugins": []
+}
